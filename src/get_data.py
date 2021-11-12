@@ -1,0 +1,23 @@
+## read params
+## process the data
+## return the data frame
+
+import os
+import pandas as pd
+import argparse
+import yaml
+
+def read_params(config_path):
+    with open(config_path) as yaml_file:
+        config = yaml.safe_load(yaml_file)
+
+def get_data(config_path):
+    config = read_params(config_path)
+    print(config)
+    #data_path = config[]
+
+if __name__ == "__main__":
+    args = argparse.ArgumentParser()
+    args.add_argument("--config",default='params.yaml')
+    parsed_args = args.parse_args()
+    get_data(config_path=parsed_args.config)
