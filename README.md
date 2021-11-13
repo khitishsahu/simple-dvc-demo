@@ -1,12 +1,14 @@
 create env
 
 '''bash
+python -m venv "Virtual env name"  
 conda create -n wineq python=3.7 -y
 '''
 
 activate env
 '''bash
 conda activate wineq
+source test/bin/activate
 '''
 
 created a req file
