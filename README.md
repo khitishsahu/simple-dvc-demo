@@ -34,3 +34,21 @@ git branch -M main
 git push origin main
 
 git add . && git commit -m "message" && git push origin main
+
+tox 
+'''bash
+tox
+'''
+
+for rebuilding
+'''bash
+tox -r
+'''
+
+pytest command
+'''bash
+pytest -v
+'''
+
+setup command
+pip install -e .
