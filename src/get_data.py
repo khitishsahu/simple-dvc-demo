@@ -20,7 +20,6 @@ def get_data(config_path):
     #print(df.head())
     return df
 
-    #extra comment
 
 if __name__ == "__main__":
     args = argparse.ArgumentParser()
